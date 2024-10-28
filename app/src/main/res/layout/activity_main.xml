@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="#FAFAFA"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Judul Form -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:text="Formulir Pendaftaran"
+            android:textAlignment="center"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Nama Lengkap -->
+        <EditText
+            android:id="@+id/namaLengkap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Lengkap"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- No Handphone -->
+        <EditText
+            android:id="@+id/noHp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="No Telepon"
+            android:padding="12dp"
+            android:textSize="14sp" />
+
+        <!-- Jenis Kelamin -->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <RadioButton
+                android:id="@+id/radioLk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Laki-laki"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radioPr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Perempuan"
+                android:textSize="14sp" />
+        </RadioGroup>
+
+        <!-- Bakat dan Minat -->
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bakat dan Minat"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <CheckBox
+                android:id="@+id/checkBoxWeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Web Dev"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="App Dev"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxCyber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cyber Security"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Tombol Daftar -->
+        <Button
+            android:id="@+id/buttonDaftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftar"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#E91E63"
+            android:layout_marginTop="16dp"
+            android:padding="12dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
